@@ -37,7 +37,6 @@ return require('packer').startup(function(use)
     run = "make",
     requires = { { "nvim-telescope/telescope.nvim" } },
     config = function()
-      require("plugin_config.treesitter").setup()
       require("telescope").load_extension("fzf")
     end,
   })
