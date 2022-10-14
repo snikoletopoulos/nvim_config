@@ -28,4 +28,15 @@ vim.o.smartcase = true
 
 --Set colorscheme (order is important here)
 vim.o.termguicolors = true
-vim.cmd([[ colorscheme dracula ]])
+vim.cmd([[ colorscheme nord ]])
+
+--Tabs
+vim.o.tabstop = 2 -- Insert 2 spaces for a tab
+vim.o.softtabstop = vim.o.tabstop -- Insert 2 spaces for a tab
+vim.o.shiftwidth = vim.o.tabstop -- Change the number of space characters inserted for indentation
+vim.o.smarttab = true -- Makes tabbing smarter will realize you have 2 vs 4
+vim.o.autoindent = true -- Copy indent from current line
+--TODO 
+vim.o.expandtab = true -- Converts tabs to spaces
+vim.o.shiftround = true -- Round indent
+vim.o.copyindent = true -- Copy indent from current line
