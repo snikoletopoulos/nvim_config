@@ -18,8 +18,8 @@ return require('packer').startup(function(use)
   -- My plugins here
 
   ---------- colorschemes ----------
-  use('dracula/vim') -- Dracula theme
-  use('gruvbox-community/gruvbox') -- gruvbox theme
+  use("dracula/vim") -- Dracula theme
+  use("gruvbox-community/gruvbox") -- gruvbox theme
   use("arcticicestudio/nord-vim") -- Nord theme
   use("rakr/vim-one") -- Atom theme
   use({
@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
       vim.g.tokyonight_style = "night"
     end,
   }) -- tokyonight theme
+  use({ "sonph/onehalf", rtp = 'vim' }) -- onejalf theme
   ----------------------------------
 
   ---------- Treesitter ----------

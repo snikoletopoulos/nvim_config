@@ -28,7 +28,7 @@ vim.o.smartcase = true
 
 --Set colorscheme (order is important here)
 vim.o.termguicolors = true
-vim.cmd([[ colorscheme nord ]])
+vim.cmd([[ colorscheme one ]])
 
 --Tabs
 vim.o.tabstop = 2 -- Insert 2 spaces for a tab
