@@ -43,11 +43,19 @@ return require('packer').startup(function(use)
   })
   --------------------------------
 
-  -- Telescope
+  ---------- Telescope ----------
   use({
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } },
   })
+  --------------------------------
+
+  ---------- NerdTree ----------
+  use({
+    "preservim/nerdtree",
+    -- requires = { { "kyazdani42/nvim-web-devicons" } },
+  })
+  --------------------------------
 
   use("wellle/targets.vim")
   use("tpope/vim-surround")
