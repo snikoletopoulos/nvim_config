@@ -57,6 +57,16 @@ return require('packer').startup({ function(use)
   })
   --------------------------------
 
+  use({
+    'glepnir/galaxyline.nvim',
+    branch = 'main',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+    config = function()
+      require("plugin_config.galaxyline")
+    end,
+  })
+  use("Iron-E/nvim-highlite")
+
   use("wellle/targets.vim")
   use("tpope/vim-surround")
 
