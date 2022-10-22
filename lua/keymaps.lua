@@ -9,7 +9,8 @@ keymap("n", "k", "gk", { noremap = false })
 keymap("n", "j", "gj", { noremap = false })
 
 -- Telescope
-vim.api.nvim_set_keymap("n", "<C-p>", "<Cmd>Telescope find_files<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-f>", "<Cmd>Telescope live_grep<CR>", { noremap = true, silent = true })
+keymap("n", "<C-p>", "<Cmd>Telescope find_files<CR>", { noremap = true, silent = true })
+keymap("n", "<C-f>", "<Cmd>Telescope live_grep<CR>", { noremap = true, silent = true })
 
--- NERDTree
+-- nvimtree
+keymap("n", "<C-b>", ":NvimTreeFindFileToggle<CR>", { noremap = true, silent = true })

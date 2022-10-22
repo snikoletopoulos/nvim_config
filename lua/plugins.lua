@@ -52,9 +52,12 @@ return require('packer').startup({ function(use)
 
   ---------- NerdTree ----------
   use({
-    "preservim/nerdtree",
-    -- requires = { { "kyazdani42/nvim-web-devicons" } },
-  })
+    "kyazdani42/nvim-tree.lua",
+    requires = { "kyazdani42/nvim-web-devicons" },
+    config = function()
+      require("plugin_config.nvimtree")
+    end,
+  }) -- Nerd tree alternative for listing files
   --------------------------------
 
   use({
